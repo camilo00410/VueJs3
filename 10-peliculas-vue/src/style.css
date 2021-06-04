@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav{
+    @apply grid grid-cols-9 text-fontWhite  bg-backNavbar font-montserrat rounded;
+}
+
+.logo{
+    @apply col-span-2 font-changa p-4 text-4xl font-medium;
+}
+
+.movie{
+    @apply text-fontWhite uppercase ;
+}
+
+.search{
+    @apply col-span-4 text-center p-4 ;
+}
+
+.inputtext{
+    @apply p-2 rounded-tl-md rounded-bl-md w-96 text-gray-900;
+}
+
+.btnsubmit{
+    @apply bg-backDark p-2 rounded-tr-md rounded-br-md;
+}
+
+.links{
+    @apply col-span-3  text-center p-4;
+}
+
+.row-links{
+    @apply grid grid-cols-9 p-2;
+}

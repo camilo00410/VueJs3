@@ -1,0 +1,1 @@
+const createMount = app.mount("#app");

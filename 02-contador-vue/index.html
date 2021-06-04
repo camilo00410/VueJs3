@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador App</title>
+
+    <!---------------------- METADATA PARA PWA ------------------------->
+    <!-- Modifica la barra de estado para ANDROID -->
+    <meta name="theme-color" content="#41b883">
+
+    <!-- Optimizaciones de SEO -->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Modificar Barra de estado IOS -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
-      <!-- Vuejs -->
-      <script src="https://unpkg.com/vue@next"></script>
+    <title>Contador App</title>
+
+    <!--------------------------- ICONOS -------------------------------->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon.png">
+
+    <!-- MANIFEST  -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- HOJAS DE ESTILOS -->
+
+    <!-- Vuejs -->
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
     <div id="app" class="app"> 
@@ -19,11 +43,13 @@
         <h3 class="count">{{count}}</h3>
         <hr>
         <div>
-            <button v-on:click="modCount('dis', 1500)"> -1 </button>
-            <button @click="modCount('add', 500)"> +1 </button>
+            <button v-on:click="modCount('dis', 1)"> -1 </button>
+            <button @click="modCount('add', 1)"> +1 </button>
         </div>
     </div>
 
+
+    <script src="./js/load.js"></script>
 
     <script src="./js/main.js"></script>
     <script src="./js/mountApp.js"></script>

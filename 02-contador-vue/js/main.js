@@ -7,7 +7,7 @@ const app = Vue.createApp({
     },
     methods: {
         modCount(instruction = "add", limit = 1){
-            if(instruction === 'dis') this.count -= limit;              
+            if(instruction === "dis") this.count -= limit;              
             else this.count += limit;        
         },
         addCount(){}
